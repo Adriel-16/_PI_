@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    background-color: bisque;
+    height: 98vh;
+    width: 98vw;
+
+    display: flex;
+
+}
+
+.login{
+
+    height: 98vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: blue;
+
+}
+
+.imagem{
+
+    border-right: 100px;
+
+}
