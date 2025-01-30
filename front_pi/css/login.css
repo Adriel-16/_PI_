@@ -4,30 +4,83 @@
     box-sizing: border-box;
 }
 
-.container{
-
-    background-color: bisque;
-    height: 98vh;
-    width: 98vw;
-
-    display: flex;
-
-}
-
-.login{
-
-    height: 98vh;
-
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: blue;
-
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.imagem{
+input {
 
-    border-right: 100px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.150);
 
+    border: 0;
+    height: 55px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 110, 255, 0.178);
+}
+
+input:hover {
+    transition: 0.2s;
+    background-color: rgba(0, 110, 255, 0.278);
+}
+
+button {
+
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.315);
+
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(0, 110, 255, 0.493);
+    border: 0;
+    height: 55px;
+    width: 400px;
+}
+
+button:hover {
+    transition: 0.2s;
+    background-color: rgba(0, 110, 255, 0.593);
+}
+
+h1{
+
+    font-size: 60px;
+    margin-bottom: 50px;
+
+
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.login {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entrada {
+    width: 100%;
+    max-width: 400px;
+}
+
+.imagem {
+    background-image: url(img/sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 100vh;
 }
