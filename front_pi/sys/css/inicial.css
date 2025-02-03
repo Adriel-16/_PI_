@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('fonte/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('woff2'),
+         url('fonte/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+header{
+
+    background-color: white;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+body{
+
+    background-color: #9DCFFD;
+
+}
+
