@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('fonte/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('woff2'),
+         url('fonte/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
+
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,15 +25,18 @@ body {
 
 input {
 
-    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.150);
-
     border: 0;
     height: 55px;
     width: 100%;
     max-width: 400px;
     margin-top: 4px;
     margin-bottom: 20px;
-    background-color: rgba(0, 110, 255, 0.178);
+    background-color: #0059ff48;
+    font-size: 20px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
 }
 
 input:hover {
@@ -30,13 +44,23 @@ input:hover {
     background-color: rgba(0, 110, 255, 0.278);
 }
 
+#eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* Ajuste o tamanho da imagem */
+    height: auto;
+}
+
 button {
 
-    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.315);
+    font-size: 110%;
 
     margin-top: 30px;
     color: white;
-    background-color: rgba(0, 110, 255, 0.493);
+    background-color: #0059ff8e;
     border: 0;
     height: 55px;
     width: 400px;
@@ -54,6 +78,13 @@ h1{
 
 
 }
+
+.atenx{
+
+    margin-bottom: 50px;
+
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -83,4 +114,9 @@ h1{
     background-size: cover;
     width: 60%;
     height: 100vh;
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
 }

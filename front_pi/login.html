@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="css/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
 </head>
 <body>
     <div class="container">
+
         <div class="login">
             
-            <h1>.Atenx</h1>
+            <div class="atenx">
+                <img src="css/img/Atenx.png" alt="">
+            </div>
 
             <div class="entrada">
                 <label for="email">E-mail</label>
                 <input name="email" type="email">
                 <label for="senha">Senha</label>
-                <input name="senha" type="password">
+
+                <div class="senha-container">
+                    <input id="senha" name="senha" type="password">
+                    <img src="css/img/fechado.png" id="eye" onclick="togglePassword()" alt="mostrar senha">
+                </div>
+
             </div>
 
             <div class="botao">
@@ -27,4 +37,5 @@
         <div class="imagem"></div>
     </div>
 </body>
+<script src="js/olho.js"></script>
 </html>
