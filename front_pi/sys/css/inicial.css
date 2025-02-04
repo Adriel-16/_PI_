@@ -10,21 +10,84 @@
          url('fonte/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-header{
-
+header {
     background-color: white;
-    height: 120px;
-
+    width: 100vw;
+    height: 10vh;
     display: flex;
     align-items: center;
-
 }
 
-body{
-
-    background-color: #9DCFFD;
-
+body {
+    background: linear-gradient(140deg, rgba(160, 200, 255, 0.54), #5E7B97);
+    height: 100vh;
 }
 
+.cabeca {
+    margin-left: 37vw;
+}
+
+.navM {
+    margin-bottom: 3px;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.navM > span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: black;
+}
+
+.navM > span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.navM, .navM > span {
+    transition: all .4s ease-in-out;
+}
+
+.navM.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+.navM.active > span:nth-child(2) {
+    width: 0;
+}
+
+.navM.active > span:nth-child(1),
+.navM.active > span:nth-child(3) {
+    transition-delay: .4s;
+}
+
+.navM.active > span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+.navM.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
+.menu {
+    position: absolute;
+    margin-top: 10vh;
+    top: 0;
+    left: -350px;
+    width: 250px;
+    height: 90vh;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: left 0.6s ease-in;
+
+    box-shadow: 0px 0px 0px 10px 10px black;
+}
+
+.menu.active {
+    padding: 20px;
+    left: 0;
+}
