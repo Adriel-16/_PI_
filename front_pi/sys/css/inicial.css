@@ -10,7 +10,8 @@
          url('fonte/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+  }
+
 
 header {
     background-color: white;
@@ -26,39 +27,37 @@ body {
 }
 
 button{
-
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
-
 }
 
-.cabeca {
-    margin-left: 37vw;
+li
+{
+    list-style: none;
+    line-height: 1.5em;
+}
+
+
+.cabeca{
+    margin-right: 45vw;
 }
 
 .botoes{
 
     width: 10vw;
     margin-top: 3.4vh;
-    margin-left: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 26vw;
     
     & .lupa{
-
-        margin-left: 1.8vw;
-
-    }
-
-    & .pasta{
-
-        margin-left: 0.5vw;
-
+        margin-left: 1vw;
     }
 }
 
 .navM {
     margin-top: 3vh;
-    margin-left: 1vw;
+    margin-left: 1.1vw;
     cursor: pointer;
 }
 
@@ -104,21 +103,41 @@ button{
 
     position: absolute;
     margin-left: 3.2vw;
-    margin-top: 100.5vh;
+    margin-top: 103vh;
     left: -350px;
-    width: 250px;
-    height: 91.5vh;
+    width: 13vw;
+    height: 89vh;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     transition: left 0.6s ease-in;
 
-    box-shadow: 0px 0px 0px 10px 10px black;
+    & .textos{
+        
+        font-size: 35px;
+        margin-top: 2vh;
+        margin-left: 2vw;
+    }
+
+   & .BTmenu{
+
+        display: flex;
+        align-items: center;
+
+        & .janela{
+            margin-left: 0.4vw;
+        }
+
+        & .config{
+            margin-left: 7.5vw;
+        }
+   }
 }
 
 .menu.active {
-    padding: 20px;
     left: 0;
 }
+
+
 
 .container{
 
@@ -136,10 +155,7 @@ button{
         gap: 10px;
 
         & .kanban{
-
             margin-top: 1vh;
-
         }
     }
-    
 }
