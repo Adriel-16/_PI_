@@ -28,8 +28,17 @@ body {
 
 button{
     cursor: pointer;
+
     background-color: rgba(0, 0, 0, 0);
     border: 0;
+}
+
+button:hover{
+
+    border-radius: 7px;
+    transition: 0.5s;
+    background-color: #dadada;
+
 }
 
 li
@@ -47,11 +56,11 @@ li
 
     width: 10vw;
     margin-top: 3.4vh;
-    margin-left: 1vw;
+    margin-left: 1.5vw;
     margin-right: 26vw;
     
     & .lupa{
-        margin-left: 1vw;
+        margin-left: 1.5vw;
     }
 }
 
@@ -103,10 +112,10 @@ li
 
     position: absolute;
     margin-left: 3.2vw;
-    margin-top: 103vh;
+    margin-top: 100vh;
     left: -350px;
     width: 13vw;
-    height: 89vh;
+    height: 91.8vh;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     transition: left 0.6s ease-in;
@@ -131,6 +140,7 @@ li
             margin-left: 7.5vw;
         }
    }
+
 }
 
 .menu.active {
@@ -143,8 +153,8 @@ li
 
     position: absolute;
     background-color: rgb(255, 255, 255);
-    margin-top: 0.5vh;
-    height: 91.5vh;
+    margin-top: 1px;
+    height: 91.8vh;
     width: 3vw;
 
     & .botoes2 {
